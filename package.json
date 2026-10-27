@@ -1,0 +1,10 @@
+{
+  "name": "keymind-contracts",
+  "private": true,
+  "description": "KEYMIND ($KMD): KEYMIND Vault with Agent Grants, launched on Programmable launch protection v1.",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "solc": "0.8.26"
+  }
+}
