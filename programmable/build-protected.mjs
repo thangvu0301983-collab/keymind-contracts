@@ -57,7 +57,7 @@ const minOutBps = BigInt(env.MIN_OUT_BPS ?? 9900);
 const nonce = env.LAUNCH_NONCE ?? "0x" + randomBytes(32).toString("hex");
 let description = (env.PROJECT_DESCRIPTION ?? readFileSync(path.join(repo, env.DESCRIPTION_FILE ?? (isBase ? "programmable/description-base.txt" : "programmable/description.txt")), "utf8")).normalize("NFC").trim();
 if (/["\\\u0000-\u001f\u007f]/u.test(description)) fail("description: no quotes, backslashes or line breaks");
-const website = need("WEBSITE_URL"), imageUri = need("IMAGE_URI"), xUrl = env.X_URL ?? "https://x.com/keymind_agent";
+const website = need("WEBSITE_URL"), imageUri = need("IMAGE_URI"), xUrl = env.X_URL ?? "https://x.com/keymindai";
 const telegramUrl = env.TELEGRAM_URL ?? "https://t.me/keymind_agent";
 const docsUrl = env.DOCS_URL; // e.g. the exact-version evidence page at the source commit
 const sourceUrl = need("SOURCE_URL"), revision = need("SOURCE_REVISION");
