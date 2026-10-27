@@ -988,9 +988,10 @@ contract KeymindExactVersionForkTest is Test {
         vm.prank(grd);
         vm.expectRevert(bytes4(keccak256("GrantTooLarge()")));
         kv.proposeGrant(grantId, carol, amount + 1, desc);
+        address projectTreasury = kv.treasury();
         vm.prank(grd);
         vm.expectRevert(bytes4(keccak256("RecipientNotAllowed()")));
-        kv.proposeGrant(grantId, kv.treasury(), amount, desc);
+        kv.proposeGrant(grantId, projectTreasury, amount, desc);
         vm.prank(grd);
         kv.proposeGrant(grantId, carol, amount, desc);
         vm.prank(stranger);
