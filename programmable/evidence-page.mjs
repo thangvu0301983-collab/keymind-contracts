@@ -3,7 +3,7 @@
 // on the page is the packed number. Run after pack-exact with the same VALID_AFTER and DEADLINE:
 //   VALID_AFTER=... DEADLINE=... node programmable/evidence-page.mjs
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -142,5 +142,6 @@ FORK_BLOCK=${ev.subject.forkBlock} node programmable/collect-exact-evidence.mjs 
 
 \`evidence/exact-version.json\` then matches the packed \`keymind/evidence/exact-version.json\` byte for byte.
 `;
+mkdirSync(path.join(repo, "docs"), { recursive: true });
 writeFileSync(path.join(repo, "docs/EXACT-VERSION-EVIDENCE.md"), page);
 console.log("wrote docs/EXACT-VERSION-EVIDENCE.md");

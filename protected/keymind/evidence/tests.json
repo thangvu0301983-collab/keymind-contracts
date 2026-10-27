@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "keymind.forge-test-evidence.v1",
+  "status": "passed",
+  "forkTestsIncluded": true,
+  "passed": 37,
+  "results": [
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_00_initialBuyBoundCall()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_A01_customAccountingSolvencyRefundWithdrawal()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_C01_callbackAuthentication()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_F01_platformFeeExactNoBypassNoOvercharge()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_G01_keymindVaultAgentGrants()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_L01_liquidityCustodyAndWithdrawal()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P01_openingFdvFloor()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P02_staleOracleRejected()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P03_initialBuyAboveTwoPercentReverts()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P04_initialBuyMinimumOutputEnforced()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P05_singleAtomicInitialization()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P06_openingTaxAtLaunchSecond()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P07_openingTaxDecaysToNormal()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P08_developerTaxExemptButCapped()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P09_buyerCapIsCumulativeAndSellsDoNotRestore()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P10_recipientCapOnTransfers()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P11_canonicalRouterOnlyBuysSellsAnyRoute()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_P12_protectionExpiresAt300s()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_S01_fourQuadrantsMultiSize()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindExactVersionForkTest",
+      "test": "test_exact_S02_secondUserAndTime()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_anyoneCanDistribute_repeatedSafely()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_cancelDuringReview()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_cannotCancelAfterPayment_unknownGrant()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_grantLifecycle_reviewThenAnyoneExecutes()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_grantsCannotOverdrawPool()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_grantsNeverPayTreasuryGuardianOrVault()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_grantsPoolCannotLeaveAnyOtherWay()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_guardianTimelocked_andCancellable()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_proposeRules()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_recipientBecomingTreasuryCannotBePaid()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_reentrantGranteeCannotDoubleCollect()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_reentrantTreasuryCannotDoubleDistribute()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_split80_20()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_treasuryTimelock_oldFeesToOldTreasury()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "test_zeroAddressesRejected()",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "testFuzz_grantNeverAboveQuarterOfPool(uint96,uint128)",
+      "status": "Success"
+    },
+    {
+      "suite": "KeymindVaultTest",
+      "test": "testFuzz_splitAlwaysAddsUp(uint96)",
+      "status": "Success"
+    }
+  ]
+}
